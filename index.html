@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <!-- Style sheet link -->
+	<link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css'>
 	<link href="main.css" rel="stylesheet" media="all">
   <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -22,15 +23,77 @@
 <body>
 
   <div id="fullpage">
-      <div class="section"><h1>DOOM</h1>
-        <div class="slide"> Slide 1 </div>
-        <div class="slide"> Slide 2 </div>
-        <div class="slide"> Slide 3 </div>
-        <div class="slide"> Slide 4 </div></div>
+      <div class="section" id="intro">
+
+									<h1>The World without Internet</h1>
+
+									<h2><bold>worldwide Internet users</bold></h2>
+
+
+									<div class="odometer">
+
+
+										<div class="digit">
+											<div class="digit-container digit-bil">3 9 8 7 6 5 4 3 2 1 3</div>
+											</div>
+
+
+										<div class="digit">
+											<div class="digit-container digit-hunmil"> 1 0 9 8 7 6 5 4 3 2 1</div>
+											</div>
+
+
+										<div class="digit">
+											<div class="digit-container digit-tenmil"> 3 2 1 0 9 8 7 6 5 4 3 </div>
+											</div>
+
+										<div class="digit">
+											<div class="digit-container digit-mil"> 2 1 0 9 8 7 6 5 4 3 2 </div>
+											</div>
+
+
+										<div class="digit">
+											<div class="digit-container digit-hunthou"> 1 0 9 8 7 6 5 4 3 2 1 </div>
+											</div>
+
+										<div class="digit">
+											<div class="digit-container digit-tenthou"> 5 4 3 2 1 0 9 8 7 6 5	 </div>
+											</div>
+
+
+										<div class="digit">
+											<div class="digit-container digit-thousend"> 2 1 0 9 8 7 6 5 4 3 2 </div>
+											</div>
+
+										<div class="digit">
+											<div class="digit-container digit-hundred">0 9 8 7 6 5 4 3 2 1 0</div>
+											</div>
+
+											<div class="digit">
+												<div class="digit-container digit-ten">0 9 8 7 6 5 4 3 2 1 0</div>
+												</div>
+
+												<div class="digit">
+												<div class="digit-container digit-one">0 9 8 7 6 5 4 3 2 1 0</div>
+												</div>
+
+									</div>
+
+					<p>The Internet has become an essential and unavoidable part of our life. Nowadays, almost nothing gets done without it. However, could our blind dependence in it be a threat to ourselves? Are we investing too much in this new medium that we are risking to lose too much if we ever were to live without it?
+						Could this huge infrastracture we call the Internet be something momentary in human history? Is it possible that somehow it may not be around in the near future? Most people go about their daily lives as if Internet has always been here and always will be. However, its success and mere presence are not proof of its permanence. It would be unwise to think it will always be around. Actually, we have no guarantee that it will. It is evident that it is so reliable but yet at the same time it is so vulnerable. Its destruction is a legitimate probability although there isn’t much fuss about it.
+					</p>
+					</div>
+
+
+
+      <div class="section">
+			<div class="slide"> Slide 2 </div>
+			<div class="slide"> Slide 3 </div>
+			<div class="slide"> Slide 4 </div>
+		</div>
       <div class="section">Some section</div>
       <div class="section">Some section</div>
-      <div class="section">Some section</div>
-  </div>
+		</div>
 
   <script type="text/javascript">
   $(document).ready(function() {
@@ -69,9 +132,9 @@
 
         //Design
         controlArrows: false,
-        verticalCentered: true,
+        verticalCentered: false,
         resize : false,
-        sectionsColor : ['#ccc', '#fff'],
+        sectionsColor : ['#7ECDD3', '#fff'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
