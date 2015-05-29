@@ -8,11 +8,18 @@
   <!-- Mobile-friendly viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!-- Style sheet link -->
+   <!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
+	<!-- Stylesheet -->
 	<link href="main.css" rel="stylesheet" media="all">
   <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+
+
 <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
 <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
 <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
@@ -25,7 +32,12 @@
   <div id="fullpage">
       <div class="section" id="intro">
 
-									<h1>The World without Internet</h1>
+								  <img src="img/world.png" alt="Title" height="150" width="150"/>
+
+								<div id="icon">
+									<img src="img/screen.png" alt="Title" height="150" width="150"/>
+								</div>
+
 
 									<h2><bold>worldwide Internet users</bold></h2>
 
@@ -79,20 +91,39 @@
 
 									</div>
 
-					<p>The Internet has become an essential and unavoidable part of our life. Nowadays, almost nothing gets done without it. However, could our blind dependence in it be a threat to ourselves? Are we investing too much in this new medium that we are risking to lose too much if we ever were to live without it?
-						Could this huge infrastracture we call the Internet be something momentary in human history? Is it possible that somehow it may not be around in the near future? Most people go about their daily lives as if Internet has always been here and always will be. However, its success and mere presence are not proof of its permanence. It would be unwise to think it will always be around. Actually, we have no guarantee that it will. It is evident that it is so reliable but yet at the same time it is so vulnerable. Its destruction is a legitimate probability although there isn’t much fuss about it.
-					</p>
+
 					</div>
 
 
+					<div class="section" id="introduction">
+									<div class="slide">
+
+												<h1>Could we live without the Internet?</h1>
+												<p>The Internet has become an essential and unavoidable part of our life. Nowadays, almost nothing gets done without it. However, could our blind dependence in it be a threat to ourselves? Are we investing too much in this new medium that we are risking to lose too much if we ever were to live without it?
+													Could this huge infrastracture we call the Internet be something momentary in human history? Is it possible that somehow it may not be around in the near future? Most people go about their daily lives as if Internet has always been here and always will be. However, its success and mere presence are not proof of its permanence. It would be unwise to think it will always be around. Actually, we have no guarantee that it will. It is evident that it is so reliable but yet at the same time it is so vulnerable. Its destruction is a legitimate probability although there isn’t much fuss about it.
+												</p>
+
+									</div>
+					</div>
+
 
       <div class="section">
-			<div class="slide"> Slide 2 </div>
+			<div class="slide">
+			</div>
 			<div class="slide"> Slide 3 </div>
 			<div class="slide"> Slide 4 </div>
 		</div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
+      <div class="section">
+						<div class="slide"> Slide 3 </div>
+						<div class="slide"> Slide 4 </div></div>
+      <div class="section">
+						<div class="slide"> Slide 3 </div>
+						<div class="slide"> Slide 4 </div>
+			</div>
+			<div class="section">
+						<div class="slide"> Slide 3 </div>
+						<div class="slide"> Slide 4 </div>
+			</div>
 		</div>
 
   <script type="text/javascript">
@@ -134,7 +165,7 @@
         controlArrows: false,
         verticalCentered: false,
         resize : false,
-        sectionsColor : ['#7ECDD3', '#fff'],
+        sectionsColor : ['#F6AA1C', '#F6AA1C', '#092327	', '#DB504A'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
