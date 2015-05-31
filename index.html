@@ -3,33 +3,34 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>The World without Internet</title>
 	<meta name="description" content="">
-  <!-- Mobile-friendly viewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 
 	<!-- Stylesheet -->
 	<link href="main.css" rel="stylesheet" media="all">
   <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
+
+	<!-- Script-->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
-
-
-
-<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-<script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+	<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+	<script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
 </head>
 
 <body>
 
   <div id="fullpage">
+
       <div class="section" id="intro">
 
 								  <img src="img/world.png" alt="Title" height="150" width="150"/>
@@ -37,7 +38,6 @@
 								<div id="icon">
 									<img src="img/screen.png" alt="Title" height="150" width="150"/>
 								</div>
-
 
 
 
@@ -173,7 +173,7 @@
 
 			</div>
 
-			<div class="slide" id="cables">
+			<div class="slide" id="solar">
 
 			<h1>#4: A solar flare</h1>
 
@@ -221,7 +221,7 @@
         anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
+        navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide' ,'fourthSlide'],
         showActiveTooltips: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
