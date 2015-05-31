@@ -14,7 +14,7 @@ body {
 
   #fp-slidesNav {
 
-    
+
 
   }
 
@@ -140,6 +140,58 @@ body {
   font-weight: bold;
 
 }
+
+#scenarios img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  display: block;
+  width: 15%;
+  height: auto;
+      }
+
+      #cables h1 {
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 3%;
+              margin-bottom: 5%;
+                width: 52%;
+                color: white;
+                text-align: center;
+                font-size: 350%;
+                font-family: 'VT323';}
+
+
+      #cables p {
+                  font-size: 150%;
+                  margin-top: 1%;
+                  line-height: 1.5;
+                  margin-left: auto;
+                  margin-bottom: auto;
+                  margin-right: auto;
+                  width: 48%;
+                  color: white;
+                  font-family: 'Source Sans Pro', sans-serif;}
+
+
+                  #cables a {
+                    color: rgb(246, 170, 28);
+                    text-decoration: none;
+                    font-weight: bold;
+
+                  }
+
+      #cables img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        display: block;
+        width: 10%;
+        height: auto;
+            }
+
 
 #scenarios a:hover {
   text-decoration: underline;
