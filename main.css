@@ -1,10 +1,11 @@
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strikes,sub,sup,tt,var,b,u,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
 @import url(https://fonts.googleapis.com/css?family=VT323);
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strikes,sub,sup,tt,var,b,u,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
 
 /*
 General styles
@@ -20,11 +21,11 @@ General styles
 h1{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 5%;
-  width: 60%;
+  margin-top: 0.1vh;
+  margin-bottom: 8vh;
+  width: 80%;
   text-align: center;
-  font-size: 47pt;
+  font-size: 8vmin;
   color: white;
   font-family: 'VT323', monospace;
 }
@@ -32,9 +33,9 @@ h1{
 p {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   line-height: 1.5;
-  font-size: 14pt;
+  font-size: 3.2vmin;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;}
 
@@ -51,103 +52,89 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 2%;
     width: 10%;
     height: auto;
 }
 
-/*Resize over 1366 width screens*/
-@media (min-width: 1366px) {
-p {
-  font-size:18pt;
-  width: 62%;
+blockquote {
+  margin-bottom: 2%;
+  background-color: rgb(188,57,8);
+  padding: 10px;
+  text-align: center;
+  color:white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  line-height: 2;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8vmin;
+  border-radius: 10px;
 }
 
- h1 {
- font-size:56pt;
- width: 66%;
- }
-
-}
-
-/*
-Title slide
-*/
-#intro img {
-  margin-top: 35px;
-  margin-bottom: 7%;
-  width: 40%;
-}
-
-#icon img {
-        margin-bottom: 40px;
-        display: block;
-        width: 20%;
-        height: auto;
-}
-
-#key{
-        position: relative;
+.key{
+        position: absolute;
         margin-left: auto;
         margin-right: auto;
-        bottom: 0px;
+        bottom: 2vh;
+        left: 50%;
+        transform: translate(-50%,-50% );
+        -ms-transform: translate(-50%,-50%); /* IE 9 */
+        -webkit-transform: translate(-50%,-50%); /* Safari */
         display: block;
         width: 80px;
         height: auto;
 }
 
-#key img{
-
+.key img{
   width: 100%;
 }
 
+
 /*
-Intro Slide
+Title slide
 */
-@media (min-width: 1366px) {
-#introduction p {
-  font-size:18pt;
+#intro img {
+  margin-top: 30px;
+  margin-bottom: 7%;
   width: 50%;
 }
 
- #introduction h1 {
- font-size:56pt;
- width: 56%;
- }
 
-}
+#icon img {
+        margin-bottom: 40px;
+        display: block;
+        width: 30%;
+      }
 
 /*
 Other slides
 */
-
 #afterIntro img {
+  width: 100%;
+}
+
+.aftermath-img {
 position: relative;
-top: 50%;
+top: 40%;
 left:50%;
-margin-top: -150px;
-margin-left: -300px;
-width: 30%;
-
+width: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%,-50%); /* IE 9 */
+-webkit-transform: translate(-50%,-50%); /* Safari */
 }
 
-
-
-#economic img{
-  display: block;
-  width: 10%;
-  height: auto;
+#afterIntro .key {
+  left: 8.3333%;
 }
 
-#scenarios p {
-  width:60%;
+#solar .key {
+  left: 90%;
 }
-@media (min-width: 1366px) {
-#scenarios p {
-  width: 64%;
-  font-size: 20pt;
-}
+
+#scenIntro .key {
+ left: 10%;
 }
 
 #scenarios a, #cables a, #solar a   {
@@ -158,47 +145,11 @@ width: 30%;
   width: 15%;
 }
 
-
-
-a:hover {
-  text-decoration: underline;
-}
-
 #aftermath img {
   width: 20%;
 }
 
-#solar p {
-  width:60%;
-}
-
-
-#aftermath blockquote {
-  margin-bottom: 2%;
-  background-color: rgb(188,57,8);
-  padding: 1em;
-  text-align: center;
-  color:white;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  line-height: 2;
-  font-size: 15pt;
-  font-family: 'Playfair Display', serif;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  -moz-box-shadow: inset 0 2px 8px -2px #000;
-  -webkit-box-shadow: inset 0 2px 8px -2px #000;
-
-}
-
-#end img{
-  width: 5%;
-}
-
 #end a {
-  text-decoration: none;
   font-weight: bold;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
@@ -208,43 +159,69 @@ a:hover {
   margin-right: auto;
   width: 50%;
   line-height: 1.2;
-  font-size: 16pt;}
+  font-size: 2.5vmin;
 }
 
-#end a:hover {
-  text-decoration: underline;
+/*
+Github logo rotation animation
+*/
+.git-end{
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.git-end {
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
 }
 
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
 
-@media (min-width: 1366px) {
-  #solar p {
-  width: 64%;
-  font-size: 20pt;
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
-}
+
 
 /*
 Counter animation
 */
-
 .odometer {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4vh;
       max-width: 270px;
-      height: 1.5em;
+      height: 22px;
       text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
       color: rgba(255, 255, 255, 0.9);
-      padding-top: 2px;
-      margin: 3em auto;
-      display: block;
-      background: #222;
-      -moz-border-radius: 2px;
-      -webkit-border-radius: 2px;
+      padding: 2px;
+      background: black;
       border-radius: 2px;
-      -moz-box-shadow: inset 0 2px 8px -2px #000;
-      -webkit-box-shadow: inset 0 2px 8px -2px #000;
       box-shadow: inset 0 2px 8px -2px #000;
     }
 
-    .digit {
+.digit {
       font-size: 16pt;
       display: inline-block;
       height: 1em;
@@ -252,6 +229,7 @@ Counter animation
       overflow: hidden;
       padding: 0 0.2em;
     }
+
     .digit:first-child {
       border-left: none;
     }
