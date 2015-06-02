@@ -35,7 +35,7 @@ p {
   margin-right: auto;
   width: 70%;
   line-height: 1.5;
-  font-size: 3.2vmin;
+  font-size: 3vmin;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;}
 
@@ -83,7 +83,7 @@ blockquote {
         -ms-transform: translate(-50%,-50%); /* IE 9 */
         -webkit-transform: translate(-50%,-50%); /* Safari */
         display: block;
-        width: 80px;
+        width: 12vmin;
         height: auto;
 }
 
@@ -98,14 +98,14 @@ Title slide
 #intro img {
   margin-top: 30px;
   margin-bottom: 7%;
-  width: 50%;
+  width: 40%;
 }
 
 
 #icon img {
         margin-bottom: 40px;
         display: block;
-        width: 30%;
+        width: 25%;
       }
 
 /*
@@ -162,9 +162,18 @@ transform: translate(-50%, -50%);
   font-size: 2.5vmin;
 }
 
-/*
-Github logo rotation animation
-*/
+@media (max-width: 360px) {
+  p {
+    font-size: 3.5vmin;
+  }
+  #economic p {
+    font-size: 3.1vmin;
+  }
+}
+
+/*******************************/
+/*         ANIMATIONS          */
+/*******************************/
 .git-end{
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
@@ -270,4 +279,136 @@ Counter animation
       to {
         transform: translateY(0);
       }
+    }
+
+    /*
+    Thanks to:
+    https://css-tricks.com/glitch-effect-text-images-svg/
+    */
+
+    /*
+      (IMAGE) PARAMS
+      =================
+      @mixin imgGlitch($name, $intensity, $width, $height, $top, $left)
+      =================
+      1. Namespace
+      2. Intensity
+      3. Width (px)
+      4. Height (px)
+      5. Top (px, abs pos)
+      6. Left (px, abs pos)
+    */
+
+    @keyframes example-three-anim-1 {
+      0% {
+        clip: rect(24px, 100px, 97px, 0);
+      }
+      6.66667% {
+        clip: rect(15px, 100px, 46px, 0);
+      }
+      13.33333% {
+        clip: rect(3px, 100px, 37px, 0);
+      }
+      20% {
+        clip: rect(35px, 100px, 62px, 0);
+      }
+      26.66667% {
+        clip: rect(25px, 100px, 4px, 0);
+      }
+      33.33333% {
+        clip: rect(1px, 100px, 90px, 0);
+      }
+      40% {
+        clip: rect(47px, 100px, 64px, 0);
+      }
+      46.66667% {
+        clip: rect(25px, 100px, 17px, 0);
+      }
+      53.33333% {
+        clip: rect(58px, 100px, 86px, 0);
+      }
+      60% {
+        clip: rect(69px, 100px, 95px, 0);
+      }
+      66.66667% {
+        clip: rect(60px, 100px, 2px, 0);
+      }
+      73.33333% {
+        clip: rect(47px, 100px, 31px, 0);
+      }
+      80% {
+        clip: rect(88px, 100px, 7px, 0);
+      }
+      86.66667% {
+        clip: rect(93px, 100px, 17px, 0);
+      }
+      93.33333% {
+        clip: rect(35px, 100px, 14px, 0);
+      }
+      100% {
+        clip: rect(3px, 100px, 63px, 0);
+      }
+    }
+    @keyframes example-three-anim-2 {
+      0% {
+        clip: rect(91px, 100px, 86px, 0);
+      }
+      6.66667% {
+        clip: rect(4px, 100px, 85px, 0);
+      }
+      13.33333% {
+        clip: rect(75px, 100px, 60px, 0);
+      }
+      20% {
+        clip: rect(9px, 100px, 83px, 0);
+      }
+      26.66667% {
+        clip: rect(23px, 100px, 72px, 0);
+      }
+      33.33333% {
+        clip: rect(45px, 100px, 6px, 0);
+      }
+      40% {
+        clip: rect(16px, 100px, 60px, 0);
+      }
+      46.66667% {
+        clip: rect(67px, 100px, 29px, 0);
+      }
+      53.33333% {
+        clip: rect(85px, 100px, 77px, 0);
+      }
+      60% {
+        clip: rect(26px, 100px, 77px, 0);
+      }
+      66.66667% {
+        clip: rect(49px, 100px, 61px, 0);
+      }
+      73.33333% {
+        clip: rect(35px, 100px, 86px, 0);
+      }
+      80% {
+        clip: rect(3px, 100px, 19px, 0);
+      }
+      86.66667% {
+        clip: rect(63px, 100px, 30px, 0);
+      }
+      93.33333% {
+        clip: rect(82px, 100px, 91px, 0);
+      }
+      100% {
+        clip: rect(92px, 100px, 96px, 0);
+      }
+    }
+
+    .anim-wrap > img:nth-child(2),
+    .anim-wrap > img:nth-child(3) {
+      clip: rect(0, 0, 0, 0);
+    }
+    .anim-wrap > img:nth-child(2) {
+      left: 77px;
+      animation: example-three-anim-1 2s infinite linear alternate-reverse;
+    }
+    .anim-wrap > img:nth-child(3) {
+      left: 73px;
+      animation: example-three-anim-2 3s infinite linear alternate-reverse;
     }
