@@ -87,6 +87,21 @@ Title slide
         height: auto;
 }
 
+#key{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0px;
+        display: block;
+        width: 80px;
+        height: auto;
+}
+
+#key img{
+
+  width: 100%;
+}
+
 /*
 Intro Slide
 */
