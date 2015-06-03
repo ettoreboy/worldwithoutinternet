@@ -157,11 +157,12 @@ transform: translate(-50%, -50%);
   text-align: center;
   display: block;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
   line-height: 1.2;
-  font-size: 2.5vmin;
+  font-size: 4.5vmin;
 }
 
+/* Mobile optimization */
 @media (max-width: 360px) {
   p {
     font-size: 3.5vmin;
@@ -169,12 +170,24 @@ transform: translate(-50%, -50%);
   #economic p {
     font-size: 3.1vmin;
   }
+
+  .key {
+    display: none;
+  }
+
+  #intro img {
+    width: 80%;
+  }
+
 }
 
 /*******************************/
 /*         ANIMATIONS          */
 /*******************************/
-.git-end{
+
+.git-end img{
+  margin-top: 5%;
+  width: 16vmin;
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
     -moz-transition-property: -moz-transform;
@@ -182,7 +195,7 @@ transform: translate(-50%, -50%);
     transition-property: transform;
     transition-duration: 1s;
 }
-.git-end {
+.git-end img{
     -webkit-animation-name: rotate;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
@@ -400,15 +413,26 @@ Counter animation
       }
     }
 
-    .anim-wrap > img:nth-child(2),
-    .anim-wrap > img:nth-child(3) {
+    .anim-wrap img {
+      position: absolute;
+      display: inline;
+      height: 100px;
+      top: 70%;
+      width: 100px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%,-50%); /* IE 9 */
+      -webkit-transform: translate(-50%,-50%); /* Safari */
+    }
+
+
+    .anim-wrap > img:nth-child(2), .anim-wrap > img:nth-child(3) {
       clip: rect(0, 0, 0, 0);
     }
     .anim-wrap > img:nth-child(2) {
-      left: 77px;
+
       animation: example-three-anim-1 2s infinite linear alternate-reverse;
     }
     .anim-wrap > img:nth-child(3) {
-      left: 73px;
       animation: example-three-anim-2 3s infinite linear alternate-reverse;
     }
