@@ -78,7 +78,7 @@ blockquote {
         margin-left: auto;
         margin-right: auto;
         bottom: 2vh;
-        left: 50%;
+        left: 25%;
         transform: translate(-50%,-50% );
         -ms-transform: translate(-50%,-50%); /* IE 9 */
         -webkit-transform: translate(-50%,-50%); /* Safari */
@@ -107,6 +107,7 @@ Title slide
         display: block;
         width: 25%;
       }
+
 
 /*
 Other slides
@@ -147,6 +148,22 @@ transform: translate(-50%, -50%);
 
 #aftermath img {
   width: 20%;
+}
+
+#last-intro .key{
+  left: 75%;
+
+}
+
+#last-intro img{
+
+  width: 35%;
+  height: auto;
+}
+
+
+#last-aftermath .key{
+  left: 90%;
 }
 
 #end a {
