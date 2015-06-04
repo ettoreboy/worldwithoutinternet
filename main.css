@@ -73,25 +73,6 @@ blockquote {
   border-radius: 10px;
 }
 
-.key{
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        bottom: 2vh;
-        left: 25%;
-        transform: translate(-50%,-50% );
-        -ms-transform: translate(-50%,-50%); /* IE 9 */
-        -webkit-transform: translate(-50%,-50%); /* Safari */
-        display: block;
-        width: 12vmin;
-        height: auto;
-}
-
-.key img{
-  width: 100%;
-}
-
-
 /*
 Title slide
 */
@@ -126,18 +107,6 @@ transform: translate(-50%, -50%);
 -webkit-transform: translate(-50%,-50%); /* Safari */
 }
 
-#afterIntro .key {
-  left: 8.3333%;
-}
-
-#solar .key {
-  left: 90%;
-}
-
-#scenIntro .key {
- left: 10%;
-}
-
 #scenarios a, #cables a, #solar a   {
   color: rgb(246, 170, 28);
 }
@@ -157,13 +126,8 @@ transform: translate(-50%, -50%);
 
 #last-intro img{
 
-  width: 35%;
+  width: 75%;
   height: auto;
-}
-
-
-#last-aftermath .key{
-  left: 90%;
 }
 
 #end a {
@@ -192,8 +156,8 @@ transform: translate(-50%, -50%);
     display: none;
   }
 
-  #intro img {
-    width: 80%;
+  .map {
+    max-width: 50%;
   }
 
 }

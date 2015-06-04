@@ -9,11 +9,6 @@
 	<title>The World without Internet</title>
 	<meta name="description" content="">
 
-   <!-- Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
-
 	<!-- Stylesheet -->
 	<link href="main.css" rel="stylesheet" media="all">
   <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
@@ -103,9 +98,11 @@
 									</div>
 
 									<div class="slide" id="last-intro">
-										<div id="map">
-											<img src="img/map.png" alt="Title" height="150" width="150"/>
-										</div>
+
+											<object  class="map" height="90%" width="100%" data="img/worldInternet_opt.svg" type="image/svg+xml">
+  													<img src="img/worldInternet.png" />
+											</object>
+
 
 
 
@@ -329,7 +326,7 @@
         anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide' ,'fourthSlide', 'fifthSlide'],
+        navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide' ,'fourthSlide', 'fifthSlide', 'sizthPage'],
         showActiveTooltips: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -365,6 +362,7 @@
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
         responsive: 0,
+				paddingTop: '1.8em',
 
         //Custom selectors
         sectionSelector: '.section',
