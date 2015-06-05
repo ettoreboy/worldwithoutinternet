@@ -397,16 +397,16 @@ Counter animation
     .anim-wrap img {
       position: absolute;
       display: inline;
-      height: 100px;
+      height: auto;
       top: 70%;
-      width: 100px;
+      width: 200px;
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%,-50%); /* IE 9 */
       -webkit-transform: translate(-50%,-50%); /* Safari */
     }
 
-
+/*
     .anim-wrap > img:nth-child(2), .anim-wrap > img:nth-child(3) {
       clip: rect(0, 0, 0, 0);
     }
@@ -417,3 +417,4 @@ Counter animation
     .anim-wrap > img:nth-child(3) {
       animation: example-three-anim-2 3s infinite linear alternate-reverse;
     }
+*/
